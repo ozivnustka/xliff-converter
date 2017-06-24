@@ -1,0 +1,8 @@
+# IDE folders
+.vscode
+.idea
+
+# Files that should never appear in the repository
+.env
+
+/node_modules

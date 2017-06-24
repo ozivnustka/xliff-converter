@@ -1,0 +1,24 @@
+{
+  "name": "xliff-converter",
+  "version": "1.0.0",
+  "description": "Xliff converter 1.2 -> 2.0 and back",
+  "main": "convertXliff12to2.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "author": "Ondrej Zivnustka",
+  "license": "ISC",
+  "engines": {
+    "node": "~7.8",
+    "npm": "^4"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "chai": "^4.0.2",
+    "command-line-args": "^4.0.6",
+    "fs": "0.0.1-security",
+    "mocha": "^3.4.2",
+    "pino": "^4.6.0",
+    "xliff": "^2.1.0"
+  }
+}
