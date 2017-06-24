@@ -9,4 +9,4 @@ node ./convertXliff12to2.js -f myfile.xml
 
 -f, --file - input file
 
--o, --output - output file (option)
+-o, --output - output file (optional)
