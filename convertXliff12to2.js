@@ -10,7 +10,7 @@ async function process() {
 	const optionDefinitions = [
 	  { name: 'back', alias: 'b', type: Boolean },
 	  { name: 'output', alias: 'o', type: String },
-	  { name: 'file', type: String, defaultOption: true },
+	  { name: 'file', alias: 'f',type: String, defaultOption: true },
 	]
 
 	const options = commandLineArgs(optionDefinitions)
@@ -23,9 +23,9 @@ async function process() {
 		let result
 
 		if(options.back) {
-			result = await converter.from12_to_2(content)
-		}else {
 			result = await converter.from2_to_12(content)
+		}else {
+			result = await converter.from12_to_2(content)
 		}
 
 		if(options.output) {
